@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+   xmlns:f="http://java.sun.com/jsf/core"    
+   xmlns:h="http://java.sun.com/jsf/html">
+  <ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">
+    <ui:define name="content">
+     <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+            <br  />
+      <h:form id="form" enctype="multipart/form-data">
+      <h:graphicImage name="images/algos.png" width="700" height="400" style= "position: 
+            absolute; left: 200px; top: 85px;"/>
+         <h:selectOneMenu value="#{welcomeBean.selection}">
+            <f:selectItem itemValue="Bubble" itemLabel="Bubble" />
+   				<f:selectItem itemValue="Selection" itemLabel="Selection" />
+   				<f:selectItem itemValue="Merge" itemLabel="Merge" />
+   				<f:selectItem itemValue="Quick" itemLabel="Quick" />			
+         </h:selectOneMenu>		
+      <h:outputText id = "o1" value="Upload File"></h:outputText>
+  <h:inputFile id="file" value="#{welcomeBean.uploadedFile}"/>
+  <h:commandButton value="Upload"
+      action="#{welcomeBean.upload()}"/>
+      </h:form>
+    </ui:define>
+</ui:composition>
+</html> 
